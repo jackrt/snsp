@@ -34,7 +34,7 @@
 					echo "sys/lanlog.sys.php?";
 				}
 				
-				// Build the HTTP query
+				// Build the HTTP query.
 				if (isset($_GET['search']))		{ $l_querybuild['search'] = $_GET['search']; }
 				if (isset($_GET['details'])) 	{ $l_querybuild['details'] = $_GET['details']; }
 				if (isset($_GET['site'])) 		{ $l_querybuild['site'] = $_GET['site']; }
@@ -43,7 +43,7 @@
 				if (isset($_GET['mac'])) 		{ $l_querybuild['mac'] = $_GET['mac']; }
 				if (isset($_GET['ssid'])) 		{ $l_querybuild['ssid'] = $_GET['ssid']; }
 				
-				// Build the HTTP query
+				// Build the HTTP query.
 				echo http_build_query($l_querybuild);
 			?>");
 			return url;
